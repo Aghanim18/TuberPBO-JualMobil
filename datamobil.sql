@@ -1,0 +1,10 @@
+CREATE DATABASE jualmobil;
+USE jualmobil;
+
+CREATE TABLE datamobil (
+kdmobil INT(3) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+merk VARCHAR(16) NOT NULL,
+jenis VARCHAR(12) NOT NULL,
+tahun_produksi VARCHAR(4) NOT NULL,
+warna VARCHAR(12) NOT NULL,
+harga DOUBLE NOT NULL);
