@@ -17,5 +17,9 @@ public class jualmobil {
     public static void main(String[] args) {
         // TODO code application logic here
     }
+
+    void setVisible(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

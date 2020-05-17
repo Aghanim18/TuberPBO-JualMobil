@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 17 Bulan Mei 2020 pada 08.18
+-- Waktu pembuatan: 17 Bulan Mei 2020 pada 09.51
 -- Versi server: 10.4.11-MariaDB
 -- Versi PHP: 7.4.5
 
@@ -36,14 +36,6 @@ CREATE TABLE `datakaryawan` (
   `gaji` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data untuk tabel `datakaryawan`
---
-
-INSERT INTO `datakaryawan` (`idkaryawan`, `nama`, `jenis_kelamin`, `jabatan`, `nomerhp`, `gaji`) VALUES
-(112, 'ujank samsu', 'Laki-laki', 'kang becak', '082839272', 19090909),
-(190, 'Abdul Gani', 'Laki-laki', 'Dukun', '0826732673245', 1909039029);
-
 -- --------------------------------------------------------
 
 --
@@ -59,13 +51,6 @@ CREATE TABLE `datamobil` (
   `harga` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data untuk tabel `datamobil`
---
-
-INSERT INTO `datamobil` (`kdmobil`, `merk`, `jenis`, `tahun_produksi`, `warna`, `harga`) VALUES
-(3, 'asu', 'kabeh', '2018', 'Biru', 3230000);
-
 -- --------------------------------------------------------
 
 --
@@ -80,14 +65,6 @@ CREATE TABLE `mobiljual` (
   `Harga` double NOT NULL,
   `tanggal_terjual` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data untuk tabel `mobiljual`
---
-
-INSERT INTO `mobiljual` (`idmobil`, `merk`, `Jenis`, `Warna`, `Harga`, `tanggal_terjual`) VALUES
-(121, 'honda', 'jhasjdhjs', 'Hitam', 128123767, '17-04-2020'),
-(155, 'yamaha', 'beat', 'Hitam', 1200000, '17-04-2020');
 
 --
 -- Indexes for dumped tables
