@@ -145,6 +145,11 @@ public class rental extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         tahun.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020" }));
+        tahun.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tahunActionPerformed(evt);
+            }
+        });
 
         warna.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hitam", "Merah", "Putih", "Cream", "Biru", "Abu-Abu" }));
 
@@ -346,6 +351,10 @@ public class rental extends javax.swing.JFrame {
         } catch (SQLException e) {
         }
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void tahunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tahunActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tahunActionPerformed
 
     /**
      * @param args the command line arguments
